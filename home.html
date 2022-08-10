@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/f0e9415ee2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/todo.css">
+  <title>To Do app</title>
+</head>
+<body>
+  <header class="header-container">
+    <p>Hello, welcome.</p>
+    <a href="./index.html">Logout</a>
+  </header>
+  <main class="main-container">
+    <section class="todoApp">
+      <h2 class="todo-heading">To Do App</h2>
+      <div class="add-task" id="add-task">
+        <p>Add new Task</p>
+        <i class="fa-solid fa-plus"></i>
+      </div>
+      <div class="tasks-container">
+    </section>
+    <div class="modal-container">
+      <form action="" class="form" id="form">
+        <h2>Add New Task</h2>
+        <input type="text" class="input-cls" placeholder="task title" id="title" required>
+        <small class="err"></small>
+        <input type="date" name="date" id="date" required>
+        <small class="err"></small>
+        <textarea name="description" id="desc" cols="20" rows="5" placeholder="task description" required></textarea>
+        <small class="err"></small>
+        <div class="btns">
+          <input type="button" value="close" class="btn btn-primary" id="closeBtn">
+          <input type="button" value="Add Task" class="btn btn-primary" id="addBtn">
+        </div>
+        <small class="err"></small>
+      </form>
+    </div>
+  </main>
+  <script src="./js/todo.js"></script>
+</body>
+</html>
